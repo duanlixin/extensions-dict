@@ -1,0 +1,32 @@
+{ 
+    "manifest_version": 2, //固定的
+    "name": "tencent sports dict", //插件名称
+    "version": "1.0", //插件使用的版本
+    "description": "快速修改页面元素", //插件的描述
+    "icons": {
+        "16": "logo76x76.png",
+        "48": "logo76x76.png",
+        "128": "logo76x76.png"
+    },
+    "browser_action": { //插件加载后生成图标
+        "default_icon": "logo76x76.png",//图标的图片
+        "default_title": "腾讯体育字典服务插件", //鼠标移到图标显示的文字 
+        "default_popup": "popup.html" //单击图标执行的文件
+    }, 
+    "permissions": [ //允许插件访问的url
+        "http://*/", 
+        "bookmarks", 
+        "tabs", 
+        "history" 
+    ], 
+    "background": {
+      "page": "background.html"
+    },
+    "content_scripts": [
+    {
+        "matches": ["http://omgfront.sports.qq.com/*", "http://sports.qq.com/kbsweb/kbsshare/*", "http://ons.webdev.com/site/mydictedit/*"],
+        "css": ["style.css"],
+        "js": ["js/zepto.js", "js/JSONStorage.js", "js/config.js"]
+    }
+  ]
+}

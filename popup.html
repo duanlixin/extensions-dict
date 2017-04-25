@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; }
+
+body { 
+    width: 400px; 
+    height: 300px;
+}
+#find-dist-dom,
+#set-json {
+    cursor: pointer;
+    padding: 3px;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(40,98,255,.3);
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: #2962ff;
+}
+#result{
+    color: red;
+}
+p {
+    margin: 6px 0;
+}
+</style>
+</head>
+<body>
+    <div>
+        <button id="find-dist-dom">高亮字典元素</button>
+        <p>找出当前页面中可以修改的字典元素</p>
+    </div>
+    <div>
+        <button id="set-json">在ons.webdev.com中设置数据</button>
+        <p>在保存页面中，把之前设置好的数据填充到页面</p>
+    </div>
+    <a href="http://ons.webdev.com/">http://ons.webdev.com</a>
+
+    <button id="get-background">从background中获取数据</button>
+
+    <div id="result"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

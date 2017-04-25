@@ -1,0 +1,54 @@
+/*
+* @Author: lixinduan
+* @Date:   2017-04-10 15:52:25
+* @Last Modified by:   lixinduan
+* @Last Modified time: 2017-04-25 10:43:48
+*/
+.layer {
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+.edit-content {
+    min-height: 200px;
+}
+.edit-content textarea {
+    width: 300px;
+    min-height: 100px;
+}
+.mask {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .3;
+    background: #000;
+}
+.hide {
+    display: none;
+}
+.dict-element {
+    position: relative;
+    border: 1px solid #2962ff;
+}
+.dict-element-item {
+    position: relative;
+    border: 1px solid yellow;
+}
+.dict-element .dict-element-edit {
+    position: absolute;
+    height: 25px !important;
+    width: 25px !important;
+    top: 0;
+    right: 0;
+}
+
+
+.opt_btn {
+
+}
